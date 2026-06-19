@@ -1,68 +1,100 @@
-# Podcast Manager
+# 🎙️ Podcast Manager - Express API
 
-## Descrição
+API REST de gerenciamento de podcasts estilo Netflix, feita com Node.js, Express e TypeScript. Projeto desenvolvido durante a formação da DIO.
 
-O Podcast Manager é uma aplicação inspirada no estilo da Netflix, que permite centralizar diferentes episódios de podcasts separados por categoria. Este projeto visa facilitar o acesso e a organização de episódios de podcasts em formato de vídeo, proporcionando uma experiência de navegação intuitiva e agradável para os usuários.
+---
 
-## Funcionalidades
+## 💡 Sobre o projeto
 
-- **Listar os episódios de podcasts em sessões de categorias:** Os episódios são organizados em categorias como saúde, bodybuilder, mentalidade e humor, permitindo aos usuários explorar facilmente os conteúdos disponíveis.
-- **Filtrar episódios por nome de podcast:** Os usuários podem realizar buscas específicas por nome de podcast, facilitando o acesso aos episódios desejados.
+A API permite listar episodios de podcasts e filtrá-los por categoria ou nome do podcast, com uma estrutura organizada em camadas (controller, service, repository).
 
-## Implementação
+---
 
-### Listar os episódios de podcasts em sessões de categorias
+## 🚀 Endpoints
 
-- **Endpoint:** `GET /list`
-- **Descrição:** Retorna uma lista de episódios de podcasts organizados por categorias.
-- **Exemplo de resposta:**
+| Método | Rota | Descrição |
+|--------|------|-----------|
+| GET | `/api/episodes` | Lista todos os episodios |
+| GET | `/api/episodes?category=saude` | Filtra por categoria |
+| GET | `/api/episodes?podcast=flow` | Filtra por nome do podcast |
 
-```json
-[
-  {
-    "podcastName": "flow",
-    "episode": "CBUM - Flow #319",
-    "videoId": "pQSuQmUfS30",
-    "cover": "https://i.ytimg.com/vi/pQSuQmUfS30/maxresdefault.jpg",
-    "link": "https://www.youtube.com/watch?v=pQSuQmUfS30",
-    "categories": ["saúde", "esporte", "bodybuilder"]
-  },
-  {
-    "podcastName": "flow",
-    "episode": "RUBENS BARRICHELLO - Flow #339",
-    "videoId": "4KDGTdiOV4I",
-    "cover": "https://i.ytimg.com/vi/4KDGTdiOV4I/maxresdefault.jpg",
-    "link": "https://www.youtube.com/watch?v=4KDGTdiOV4I",
-    "categories": ["esporte", "corrida"]
-  }
-]
+### Categorias disponíveis
+`humor`, `entretenimento`, `esporte`, `saude`, `tecnologia`, `ia`, `games`
+
+---
+
+## ▶️ Como rodar
+
+Precisa ter o **Node.js v20+** instalado.
+
+```bash
+# clone o repositorio
+git clone https://github.com/seu-usuario/nodejs-express-api
+
+# entra na pasta
+cd nodejs-express-api
+
+# instala as dependencias
+npm install
+
+# roda em modo desenvolvimento
+npm run start:dev
 ```
 
-### Filtrar episódios por nome de podcast
+Servidor sobe em `http://localhost:3333`
 
-- **Endpoint:** `GET /episode?podcastName={nome}`
-- **Descrição:** Retorna uma lista de episódios de podcast com base no nome do podcast fornecido.
-- **Exemplo de requisição:** `GET /episode?podcastName=flow`
+---
 
-## Tecnologias Utilizadas
+## 🧪 Testando
 
-- **[TypeScript](https://www.typescriptlang.org/):** Linguagem de programação utilizada para o desenvolvimento do projeto.
-- **[Tsup](https://github.com/egoist/tsup):** Ferramenta de construção e empacotamento para projetos TypeScript.
-- **[Tsx](https://github.com/egoist/tsx):** Compilador TypeScript que suporta a construção de projetos.
-- **[Node.js](https://nodejs.org/):** Ambiente de execução JavaScript que permite executar código JavaScript do lado do servidor.
-- **[@types/node](https://www.npmjs.com/package/@types/node):** Pacote de definições de tipos para Node.js para auxiliar no desenvolvimento com TypeScript.
+```
+GET http://localhost:3333/api/episodes
+GET http://localhost:3333/api/episodes?category=saude
+GET http://localhost:3333/api/episodes?podcast=flow
+```
 
-## Como Utilizar
+---
 
-1. Clone este repositório.
-2. Instale as dependências usando `npm install`.
-3. Inicie o servidor executando `start:dev`.
-4. Acesse os endpoints fornecidos para listar os episódios de podcasts ou filtrá-los por nome de podcast.
+## 📁 Estrutura
 
-## Contribuição
+```
+nodejs-express-api/
+│
+├── src/
+│   ├── controllers/
+│   │   └── podcast-controller.ts
+│   ├── models/
+│   │   └── podcast-model.ts
+│   ├── repositories/
+│   │   ├── podcast-repository.ts
+│   │   └── podcasts.json
+│   ├── routes/
+│   │   └── podcast-routes.ts
+│   ├── services/
+│   │   └── podcast-service.ts
+│   └── app.ts
+│
+├── package.json
+└── readme.md
+```
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir problemas ou enviar solicitações de recebimento (pull requests) para melhorar este projeto.
+---
 
-## Licença
+## 🛠️ Tecnologias
 
-Este projeto está licenciado sob a [MIT License](LICENSE).
+- Node.js
+- Express
+- TypeScript
+- tsx / tsup
+
+---
+
+## 🔗 Links úteis
+
+- [Repositorio original - DIO](https://github.com/digitalinnovationone/nodejs-express-api)
+- [Express.js](https://expressjs.com)
+- [DIO](https://dio.me)
+
+---
+
+Feito com 💙 durante a formação Node.js da DIO

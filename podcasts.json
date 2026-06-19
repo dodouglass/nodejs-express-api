@@ -1,0 +1,58 @@
+[
+  {
+    "podcastName": "flow-podcast",
+    "episode": "IGÃO UPPERMAN - Flow #319",
+    "videoId": "pQSuQmUfS30",
+    "cover": "https://i.ytimg.com/vi/pQSuQmUfS30/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=pQSuQmUfS30",
+    "category": ["humor", "entretenimento"]
+  },
+  {
+    "podcastName": "flow-podcast",
+    "episode": "RUBENS BARRICHELLO - Flow #198",
+    "videoId": "4KDGTdiOV4I",
+    "cover": "https://i.ytimg.com/vi/4KDGTdiOV4I/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=4KDGTdiOV4I",
+    "category": ["esporte", "automobilismo"]
+  },
+  {
+    "podcastName": "inteligencia-ltda",
+    "episode": "Drauzio Varella - Inteligência Ltda #205",
+    "videoId": "Vv9QGDHkFi8",
+    "cover": "https://i.ytimg.com/vi/Vv9QGDHkFi8/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=Vv9QGDHkFi8",
+    "category": ["saude", "medicina"]
+  },
+  {
+    "podcastName": "inteligencia-ltda",
+    "episode": "Atila Iamarino - Inteligência Ltda #332",
+    "videoId": "3S7VDmKFTc8",
+    "cover": "https://i.ytimg.com/vi/3S7VDmKFTc8/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=3S7VDmKFTc8",
+    "category": ["saude", "ciencia"]
+  },
+  {
+    "podcastName": "nerdcast",
+    "episode": "Nerdcast - Inteligência Artificial vai dominar o mundo?",
+    "videoId": "XzZ7KPybZ5I",
+    "cover": "https://i.ytimg.com/vi/XzZ7KPybZ5I/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=XzZ7KPybZ5I",
+    "category": ["tecnologia", "ia"]
+  },
+  {
+    "podcastName": "nerdcast",
+    "episode": "Nerdcast RPG - Dragões e Masmorras Vol.1",
+    "videoId": "JbijHGKAn4Q",
+    "cover": "https://i.ytimg.com/vi/JbijHGKAn4Q/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=JbijHGKAn4Q",
+    "category": ["tecnologia", "games"]
+  },
+  {
+    "podcastName": "podpah",
+    "episode": "FRANK MASCHKE - Podpah #700",
+    "videoId": "abc1234xyz",
+    "cover": "https://i.ytimg.com/vi/abc1234xyz/hqdefault.jpg",
+    "link": "https://www.youtube.com/watch?v=abc1234xyz",
+    "category": ["humor", "entretenimento"]
+  }
+]
